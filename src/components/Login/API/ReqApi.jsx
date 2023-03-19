@@ -90,7 +90,7 @@ function ReqApi() {
               }}>
 
 
-                <FormLabel>Name: </FormLabel>
+                <FormLabel>Nome: </FormLabel>
                 <FormEditInput>
                   <FormInput type="text" name="nome"
                     placeholder={aluno.nome}
@@ -102,7 +102,7 @@ function ReqApi() {
                 </FormEditInput>
 
 
-                <FormLabel>Social Number: </FormLabel>
+                <FormLabel>CPF: </FormLabel>
                 <FormEditInput>
                   <FormInput
                     type="text" name="cpf"
@@ -114,7 +114,7 @@ function ReqApi() {
                 </FormEditInput>
 
 
-                <FormLabel>Address: </FormLabel>
+                <FormLabel>Endereço: </FormLabel>
                 <FormEditInput>
                   <FormInput
                     type="text" name="endereco"
@@ -126,7 +126,7 @@ function ReqApi() {
                   <EditButton onClick={() => setDisabledEndereco(!disabledEndereco)}><BsPencilSquare /></EditButton>
                 </FormEditInput>
 
-                <FormLabel>State:  </FormLabel>
+                <FormLabel>Cidade:  </FormLabel>
                 <FormEditInput>
                   <FormInput
                     type="text" name="cidade"
@@ -139,7 +139,7 @@ function ReqApi() {
                 </FormEditInput>
 
 
-                <FormLabel>Phone: </FormLabel>
+                <FormLabel>Telefone: </FormLabel>
                 <FormEditInput>
                   <FormInput
                     type="text" name="telefone"
@@ -164,7 +164,7 @@ function ReqApi() {
                 </FormEditInput>
 
 
-                <FormLabel>Membership: </FormLabel>
+                <FormLabel>Plano: </FormLabel>
                 <FormEditInput>
                   <FormInput
                     type="text" name="plano"
@@ -177,8 +177,8 @@ function ReqApi() {
                 </FormEditInput>
 
 
-                <FormButton type='button' className='buttonCont' onClick={() => DelApi(aluno.id)}>Delete member</FormButton>
-                <FormButton type='submit'>Reset member</FormButton>
+                <FormButton type='button' className='buttonCont' onClick={() => DelApi(aluno.id)}>Deletar registro</FormButton>
+                <FormButton type='submit'>Atualizar registro</FormButton>
 
               </Form>
             </>
@@ -195,4 +195,3 @@ function ReqApi() {
 }
 
 export default ReqApi;
-/* att */

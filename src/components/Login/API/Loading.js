@@ -8,8 +8,8 @@ export const Body = styled.div`
     justify-content: center;
     align-items: center;
   `;
-  
-  export const Loading = styled.div`
+
+export const Loading = styled.div`
   margin-top: 100px;
     width: 200px;
     height: 200px;
@@ -26,4 +26,3 @@ export const Body = styled.div`
   }
 
   `
-  /* att */
