@@ -20,13 +20,13 @@ const LogIn = () => {
                     <Icon to='/'>Academia 💪</Icon>
                     <FormContent>
                         <Form action='register'>
-                            <FormH1>Area administrativa</FormH1>
-                            <FormLabel htmlFor='for'>E-mail</FormLabel>
+                            <FormH1>Área administrativa</FormH1>
+                            <FormLabel htmlFor='for'>E-mail corporativo</FormLabel>
                             <FormInput type='email' required />
                             <FormLabel htmlFor='for'>Senha</FormLabel>
                             <FormInput type='password' required />
                             <FormButton type='submit'>Entrar</FormButton>
-                            <Text>Esqueceu a senha?</Text>
+                            <Text>Esqueceu a senha? Contacte o suporte</Text>
                         </Form>
                     </FormContent>
                 </FormWrap>

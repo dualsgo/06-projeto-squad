@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '../ButtonElements';
 import {
     InfoContainer,
     InfoWrapper,
@@ -22,11 +21,7 @@ const InfoSection = ({ lightBg,
     headline,
     darkText,
     description,
-    img,
-    alt,
-    primary,
-    dark2,
-    dark }) => {
+    img}) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -41,7 +36,7 @@ const InfoSection = ({ lightBg,
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={img} alt={alt} />
+                                <Img src={img}/>
                             </ImgWrap>
                         </Column2>
                     </InfoRow>

@@ -19,7 +19,6 @@ import { BsPencilSquare } from "react-icons/bs";
 
 function ReqApi() {
   const [alunos, setAlunos] = useState([])
-  // estados de disabled
   const [disabledNome, setDisabledNome] = useState(true)
   const [disabledCPF, setDisabledCPF] = useState(true)
   const [disabledEndereco, setDisabledEndereco] = useState(true)

@@ -39,14 +39,14 @@ const Navbar = ({ toggle }) => {
             <IconContext.Provider value={{ color: '#fff' }}>
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
-                        <NavLogo to='/' onClick={toggleHome}>Academia 💪</NavLogo>
+                        <NavLogo to='/' onClick={toggleHome}>Body Move Center</NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars />
                         </MobileIcon>
                         <NavMenu>
                             <NavItem>
                                 <NavLinks
-                                    to='about'
+                                    to='sobre'
                                     smooth={true}
                                     duration={500}
                                     spy={true}
@@ -57,7 +57,7 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to='locations'
+                                <NavLinks to='funcionalidades'
                                     smooth={true}
                                     duration={500}
                                     spy={true}
@@ -66,7 +66,7 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to='memberships'
+                                <NavLinks to='planos'
                                     smooth={true}
                                     duration={500}
                                     spy={true}
@@ -75,7 +75,7 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to='/contato'
+                                <NavLinks to='contato'
                                     smooth={true}
                                     duration={500}
                                     spy={true}
