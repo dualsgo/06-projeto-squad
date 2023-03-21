@@ -1,8 +1,8 @@
 const Funcionalidades = require("../models/Funcionalidades");
 
 const editFuncionalidades = async (req, res) => {
-    const { funcionalidadeId,name,comment } = req.body;
-    
+    const { funcionalidadeId, name, comment } = req.body;
+
     Funcionalidades.findOne({
         where: {
             funcionalidadeId: req.body.funcionalidadeId,
