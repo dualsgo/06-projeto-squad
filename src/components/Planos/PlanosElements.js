@@ -4,8 +4,8 @@ import { BsCheckLg } from 'react-icons/bs';
 export const PlanosContainer = styled.div`  
     height: 800px;
     display: flex;
-    margin: 10px auto 10px auto;
-    padding: 10px auto 10px auto;
+    margin: 100px auto 100px auto;
+    padding: 100px auto 100px auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
