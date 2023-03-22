@@ -12,6 +12,7 @@ import {
   FormInput,
   FormLabel,
   EditButton,
+  LinkEdit,
   FormButtonSearch
 } from './StyledComponents'
 import { Loading } from './Loading'
@@ -74,11 +75,12 @@ function ReqApi() {
 
     <Container>
       <FormWrap>
-        <Icon to='/'>Academia 💪</Icon>
-
         <FormContent>
           <Link to='/post'><FormButtonSearch>Cadastrar aluno</FormButtonSearch></Link>
           <FormButtonSearch onClick={Alunos}>Listagem de alunos</FormButtonSearch>
+          <LinkEdit to='/'>Página inicial</LinkEdit>
+          <LinkEdit to='/admin/sobre'>Sobre</LinkEdit>
+          <LinkEdit to='/admin/funcionalidades'>Funcionalidades</LinkEdit>
 
           {isLoading ? alunos.map((aluno) => {
 

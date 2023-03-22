@@ -17,7 +17,7 @@ const LogIn = () => {
         <>
             <Container>
                 <FormWrap>
-                    <Icon to='/'>Academia 💪</Icon>
+                    <Icon to='/'>Body Move Center</Icon>
                     <FormContent>
                         <Form action='register'>
                             <FormH1>Área administrativa</FormH1>

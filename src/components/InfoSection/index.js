@@ -1,4 +1,6 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
+
 import {
     InfoContainer,
     InfoWrapper,
@@ -21,7 +23,25 @@ const InfoSection = ({ lightBg,
     headline,
     darkText,
     description,
-    img}) => {
+    img }) => {
+
+    const [sobre, setSobre] = useState('');
+
+    useEffect(() => {
+        async function fetchItems() {
+            const response = await fetch('http://localhost:3001/sobre');
+            const data = await response.json();
+
+            if (data.sobreData[0] === undefined) {
+                setSobre('');
+            } else {
+                setSobre(data.sobreData[0])
+            }
+
+        }
+        fetchItems();
+    }, []);
+
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -31,12 +51,12 @@ const InfoSection = ({ lightBg,
                             <TextWrapper>
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
-                                <Subtitle darkText={darkText}>{description}</Subtitle>
+                                <Subtitle darkText={darkText}>{sobre.comment}</Subtitle>
                             </TextWrapper>
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={img}/>
+                                <Img src={img} />
                             </ImgWrap>
                         </Column2>
                     </InfoRow>

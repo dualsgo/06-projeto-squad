@@ -21,7 +21,6 @@ const toggle = () =>{
                 <Navbar toggle={toggle} />
                 <HomeSection />
                 <InfoSection {...homeObjOne}/>
-                <InfoSection {...homeObjTwo}/>
                 <Planos />
                 <Contato/>
                 <Footer />

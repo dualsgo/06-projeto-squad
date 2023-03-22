@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import {
   Container,
   FormWrap,
@@ -39,12 +40,16 @@ function PostApi() {
     });
   }
 
-  return (<Container>
+  return (
+  <Container>
     <FormWrap>
-      <Icon to='/'>Academia 💪</Icon>
+
+
       <FormContent>
         <LinkEdit to='/register' >Listagem de alunos </LinkEdit>
-
+          <LinkEdit to='/'>Página inicial</LinkEdit>
+          <LinkEdit to='/admin/sobre'>Sobre</LinkEdit>
+          <LinkEdit to='/admin/funcionalidades'>Funcionalidades</LinkEdit>
         <Form onSubmit={Alunos}>
 
           <FormLabel>Nome</FormLabel>

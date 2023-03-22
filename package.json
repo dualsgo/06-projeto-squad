@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.24.0",
+    "bootstrap": "^5.2.3",
     "core-js": "^3.29.1",
     "install": "^0.13.0",
     "node": "^17.3.0",
