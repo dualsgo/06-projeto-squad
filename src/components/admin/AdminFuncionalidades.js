@@ -1,5 +1,6 @@
 import { Container, Table, Form, Button } from 'react-bootstrap'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function AdminFuncionalidades() {
     const [funcionalidades, setFuncionalidades] = useState([])
@@ -127,6 +128,9 @@ function AdminFuncionalidades() {
 
     return (
         <Container className="conteudo-margin">
+            <Link to="/"><Button variant="secondary">Home</Button></Link>
+            <Link to="/Register"><Button variant="secondary">Administrativo</Button></Link>
+            <hr />
             <h1>Admin Funcionalidades</h1>
             <hr />
             <h2>Adicionar Funcionalidade</h2>

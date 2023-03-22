@@ -65,7 +65,7 @@ const Contato = () => {
 
     return (
         <ContatoContainer id='contato'>
-            <ContatoH1>Fale conosco</ContatoH1>
+            <ContatoH1>Faça a sua inscrição no programa aqui!</ContatoH1>
             <Form onSubmit={handleSubmit}>
                 <FormLabel htmlFor='nome'>Nome</FormLabel>
                 <FormInput
@@ -94,7 +94,7 @@ const Contato = () => {
                         onFormUpdate("email", e.target.value)
                     }
                 />
-                <FormLabel htmlFor='mensagem'>Mensagem</FormLabel>
+                <FormLabel htmlFor='mensagem'>Telefone</FormLabel>
                 <FormInput
                     type="tel"
                     value={formDetails.number}

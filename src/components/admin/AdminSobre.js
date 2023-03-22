@@ -1,6 +1,6 @@
 import {Container, Form, Button} from 'react-bootstrap'
 import {useEffect, useState} from 'react'
-
+import { Link } from 'react-router-dom';
 function AdminSobre() {
     const [sobre, setSobre] = useState([])
 
@@ -45,6 +45,9 @@ function AdminSobre() {
 
     return (
         <Container className="conteudo-margin">
+                    <Link to="/"><Button variant="secondary">Home</Button></Link>
+            <Link to="/Register"><Button variant="secondary">Administrativo</Button></Link>
+            <hr/>
             <h1>Admin - Sobre</h1>
             <hr />
             <Form onSubmit={handleSubmit}>
