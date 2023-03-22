@@ -19,7 +19,7 @@ function AdminFuncionalidades() {
         const form = event.currentTarget
         const title = form.title.value
         const description = form.description.value
-        
+
         const response = await fetch('http://localhost:3001/addfuncionalidades', {
             method: 'POST',
             body: JSON.stringify({
@@ -114,7 +114,7 @@ function AdminFuncionalidades() {
             .then(response => response.json())
             .then(data => console.log(data))
             .catch(error => console.error(error))
-            console.log(id)
+        console.log(id)
 
         colunaTitulo.innerText = inputTitulo.value
         colunaDescricao.innerText = inputDescricao.value
@@ -161,8 +161,8 @@ function AdminFuncionalidades() {
                             <td className='text-dark'>{funcionalidade.name}</td>
                             <td className='text-dark'>{funcionalidade.comment}</td>
                             <td>
-                                <Button variant="primary" onClick={(event) => {habilitarEdicao(event.target, funcionalidade.funcionalidadeId)}}>Editar</Button>
-                                <Button variant="danger" onClick={() => {excluirFuncionalidade(funcionalidade.funcionalidadeId)}}>Excluir</Button>
+                                <Button variant="primary" onClick={(event) => { habilitarEdicao(event.target, funcionalidade.funcionalidadeId) }}>Editar</Button>
+                                <Button variant="danger" onClick={() => { excluirFuncionalidade(funcionalidade.funcionalidadeId) }}>Excluir</Button>
                             </td>
                         </tr>
                     ))}

@@ -12,7 +12,6 @@ import AdminSobre from './components/admin/AdminSobre';
 function App() {
   return (
     <Router>
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginPage />} />
