@@ -4,7 +4,7 @@ import styled from "styled-components";
 //background color change
 export const InfoContainer = styled.div`
 color: #fff;
-background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#000')};
+background: ${({ lightBg }) => (lightBg ? '#000' : '#fff')};
 
 
 @media screen and (max-width: 768px) {  
@@ -68,7 +68,7 @@ margin-bottom: 24px;
 font-size: 48px;
 line-height: 1.1;
 font-weight: 600;
-color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#000')
+color: ${({ lightText }) => (lightText ? '#000' : '#fff')
     };
 
 @media screen and (max-width: 480px){
@@ -78,11 +78,9 @@ color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#000')
 
 export const Subtitle = styled.p`
 max-width: 440px;
-margin-bottom: 35px;
 font-size: 18px;
 line-height: 24px;
-color: ${({ darkText }) => (darkText ? '#000' : '#fff')};
-white-space: pre-wrap;
+color: ${({ darkText }) => (darkText ? '#000' : '#000')};
 `;
 
 export const BtnWrap = styled.div`

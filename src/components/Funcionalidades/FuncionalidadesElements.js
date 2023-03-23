@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { BsCheckLg } from 'react-icons/bs';
 
-export const PlanosContainer = styled.div`  
+export const FuncionalidadesContainer = styled.div`  
     height: 800px;
     display: flex;
-    margin: 100px auto 100px auto;
+    margin: auto;
     padding: 100px auto 100px auto;
     flex-direction: column;
     justify-content: center;
@@ -12,21 +12,23 @@ export const PlanosContainer = styled.div`
     background: #000;
 
     @media screen and (max-width: 1000px) {
-        height: 1800px;
+        height: 1000px;
+        margin: 20px;
+        padding: 50px;
     }
 
     @media screen and (max-width: 480px) {
-        height: 1800px;
+        height: 1000px;
+        margin: 20px;
+        padding: 50px;
     }
 `;
 
-export const PlanosWrapper = styled.div` 
+export const FuncionalidadesWrapper = styled.div` 
     max-width: 1000px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     align-items: center;
-    grid-gap: 16px;
     padding: 0 50px;
 
     @media screen and (max-width: 1000px) {
@@ -40,7 +42,7 @@ export const PlanosWrapper = styled.div`
 
 `;
 
-export const PlanosCard = styled.div` 
+export const FuncionalidadesCard = styled.div` 
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -59,42 +61,43 @@ export const PlanosCard = styled.div`
         cursor: pointer;        
     }
 `;
-export const PlanosChecks = styled.div` 
+export const FuncionalidadesChecks = styled.div` 
     min-height: 240px;
     padding: 10px 0;
 `;
 
-export const PlanosIcon = styled.img` 
+export const FuncionalidadesIcon = styled.img` 
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
     margin-top: 30px
 `;
 
-export const PlanosH1 = styled.h1` 
+export const FuncionalidadesH1 = styled.h1` 
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 64px;
 
     @media screen and (max-width: 768px) {
+margin: 20px;
 
         text-align: center;
     }
 
 
     @media screen and (max-width: 480px) {
-
+margin: 20px;
         font-size: 2rem;
     }
     `;
 
-export const PlanosH2 = styled.h2` 
+export const FuncionalidadesH2 = styled.h2` 
     font-size: 1.2rem;
     margin-top: 18px;
     margin-bottom: 10px;
 `;
 
-export const PlanosP = styled.p` 
+export const FuncionalidadesP = styled.p` 
     font-size: 1rem;
     text-align: center;
     padding-top: 5px;

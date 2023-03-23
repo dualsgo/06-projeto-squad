@@ -15,7 +15,7 @@ import {
     Img
 } from './InfoElements';
 
-const InfoSection = ({ lightBg,
+const Sobre = ({ lightBg,
     id,
     imgStart,
     topLine,
@@ -66,4 +66,4 @@ const InfoSection = ({ lightBg,
     )
 }
 
-export default InfoSection
+export default Sobre
