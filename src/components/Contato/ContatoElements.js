@@ -23,7 +23,7 @@ export const ContatoH1 = styled.h1`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-envely;
   align-items: center;
 `
 
@@ -35,6 +35,7 @@ export const FormLabel = styled.label`
 
 export const FormInput = styled.input`
 padding: 16px 16px;
+margin-right: 200px;
 margin-bottom: 32px;
 border: none;
 border-radius: 4px;

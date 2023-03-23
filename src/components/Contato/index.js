@@ -67,11 +67,13 @@ const Contato = () => {
         <ContatoContainer id='contato'>
             <ContatoH1>Faça a sua inscrição no programa aqui!</ContatoH1>
             <Form onSubmit={handleSubmit}>
+            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div style={{ flex: "1", marginRight: "20px" }}>
                 <FormLabel htmlFor='nome'>Nome</FormLabel>
                 <FormInput
                     type="text"
                     value={formDetails.firstName}
-                    placeholder="Nome"
+                    placeholder="Joãozinho"
                     onChange={(e) =>
                         onFormUpdate("firstName", e.target.value)
                     }
@@ -80,16 +82,18 @@ const Contato = () => {
                 <FormInput
                     type="text"
                     value={formDetails.lastName}
-                    placeholder="Sobrenome"
+                    placeholder="Silva"
                     onChange={(e) =>
                         onFormUpdate("lastName", e.target.value)
                     }
                 />
+                </div>
+                <div style={{ flex: "1" }}>
                 <FormLabel htmlFor='email'>E-mail</FormLabel>
                 <FormInput
                     type="email"
                     value={formDetails.email}
-                    placeholder="Email"
+                    placeholder="email@email.com"
                     onChange={(e) =>
                         onFormUpdate("email", e.target.value)
                     }
@@ -98,11 +102,13 @@ const Contato = () => {
                 <FormInput
                     type="tel"
                     value={formDetails.number}
-                    placeholder="Telefone"
+                    placeholder="(21) 9 9988-7766"
                     onChange={(e) =>
                         onFormUpdate("number", e.target.value)
                     }
                 />
+                </div>
+                </div>
                 <FormButton type='submit'>{buttonText}</FormButton>
                 <p
                     className={
@@ -116,4 +122,4 @@ const Contato = () => {
     )
 }
 
-export default Contato;
+export default Contato

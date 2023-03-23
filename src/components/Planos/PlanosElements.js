@@ -4,7 +4,7 @@ import { BsCheckLg } from 'react-icons/bs';
 export const PlanosContainer = styled.div`  
     height: 800px;
     display: flex;
-    margin: 100px auto 100px auto;
+    margin: 0px auto 0px auto;
     padding: 100px auto 100px auto;
     flex-direction: column;
     justify-content: center;
