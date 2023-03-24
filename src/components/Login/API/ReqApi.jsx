@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import {
   Container,
   FormWrap,
-  Icon,
   FormButton,
   FormContent,
   FormEditInput,

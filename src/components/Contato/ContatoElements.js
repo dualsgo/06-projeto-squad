@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const ContatoContainer = styled.div`
-  background-color: #F9F9F9;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,6 @@ export const ContatoH1 = styled.h1`
   font-size: 2.5rem;
   color: #000;
   margin-bottom: 64px;
-
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
@@ -23,20 +22,22 @@ export const ContatoH1 = styled.h1`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  justify-content: space-envely;
+  justify-content: center;
   align-items: center;
+  background: #000 ;
+  padding: 50px
 `
 
 export const FormLabel = styled.label`
   font-size: 1.5rem;
-  color: #000;
-  margin-bottom: 8px;
+  color: #fff;
+  margin: 0 15px 32px 0;
+
 `
 
 export const FormInput = styled.input`
 padding: 16px 16px;
-margin-right: 200px;
-margin-bottom: 32px;
+margin: 0 15px 32px 0;
 border: none;
 border-radius: 4px;
 `

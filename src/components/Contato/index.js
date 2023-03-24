@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import {
     ContatoContainer,
@@ -67,47 +67,47 @@ const Contato = () => {
         <ContatoContainer id='contato'>
             <ContatoH1>Faça a sua inscrição no programa aqui!</ContatoH1>
             <Form onSubmit={handleSubmit}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ flex: "1", marginRight: "20px" }}>
-                <FormLabel htmlFor='nome'>Nome</FormLabel>
-                <FormInput
-                    type="text"
-                    value={formDetails.firstName}
-                    placeholder="Joãozinho"
-                    onChange={(e) =>
-                        onFormUpdate("firstName", e.target.value)
-                    }
-                />
-                <FormLabel htmlFor='sobrenome'>Sobrenome</FormLabel>
-                <FormInput
-                    type="text"
-                    value={formDetails.lastName}
-                    placeholder="Silva"
-                    onChange={(e) =>
-                        onFormUpdate("lastName", e.target.value)
-                    }
-                />
-                </div>
-                <div style={{ flex: "1" }}>
-                <FormLabel htmlFor='email'>E-mail</FormLabel>
-                <FormInput
-                    type="email"
-                    value={formDetails.email}
-                    placeholder="email@email.com"
-                    onChange={(e) =>
-                        onFormUpdate("email", e.target.value)
-                    }
-                />
-                <FormLabel htmlFor='mensagem'>Telefone</FormLabel>
-                <FormInput
-                    type="tel"
-                    value={formDetails.number}
-                    placeholder="(21) 9 9988-7766"
-                    onChange={(e) =>
-                        onFormUpdate("number", e.target.value)
-                    }
-                />
-                </div>
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                    <div>
+                        <FormLabel htmlFor='nome'>Nome</FormLabel>
+                        <FormInput
+                            type="text"
+                            value={formDetails.firstName}
+                            placeholder="Nome"
+                            onChange={(e) =>
+                                onFormUpdate("firstName", e.target.value)
+                            }
+                        />
+                        <FormLabel htmlFor='sobrenome'>Sobrenome</FormLabel>
+                        <FormInput
+                            type="text"
+                            value={formDetails.lastName}
+                            placeholder="Sobrenome"
+                            onChange={(e) =>
+                                onFormUpdate("lastName", e.target.value)
+                            }
+                        />
+                    </div>
+                    <div style={{ flex: "1" }}>
+                        <FormLabel htmlFor='email'>E-mail</FormLabel>
+                        <FormInput
+                            type="email"
+                            value={formDetails.email}
+                            placeholder="email@provedor.com"
+                            onChange={(e) =>
+                                onFormUpdate("email", e.target.value)
+                            }
+                        />
+                        <FormLabel htmlFor='mensagem'>Telefone</FormLabel>
+                        <FormInput
+                            type="tel"
+                            value={formDetails.number}
+                            placeholder="(DDD) 98765-4321"
+                            onChange={(e) =>
+                                onFormUpdate("number", e.target.value)
+                            }
+                        />
+                    </div>
                 </div>
                 <FormButton type='submit'>{buttonText}</FormButton>
                 <p
@@ -122,4 +122,4 @@ const Contato = () => {
     )
 }
 
-export default Contato
+export default Contato;
