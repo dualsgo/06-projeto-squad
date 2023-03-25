@@ -32,7 +32,7 @@ const Contato = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Enviado");
-        let response = await fetch("http://localhost:3001/adduser", {
+        let response = await fetch("https://back-og3s.onrender.com/adduser", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
