@@ -19,7 +19,7 @@ const Funcionalidades = () => {
     const [funcionalidadeItems, setFuncionalidadesItems] = useState([]);
     useEffect(() => {
         async function fetchItems() {
-            const response = await fetch('http://localhost:3001/funcionalidades');
+            const response = await fetch('https://back-og3s.onrender.com/funcionalidades');
             const data = await response.json();
             setFuncionalidadesItems(data.funcionalidadeData);
         }
