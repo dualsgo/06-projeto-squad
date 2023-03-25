@@ -6,7 +6,7 @@ function AdminSobre() {
 
     useEffect (() => {
         async function getSobre() {
-            const response = await fetch('http://localhost:3001/sobre')
+            const response = await fetch('https://back-og3s.onrender.com/sobre')
             const sobre = await response.json()
             setSobre(sobre.sobreData)
         }
@@ -24,7 +24,7 @@ function AdminSobre() {
         const form = event.currentTarget
         const text = form.text.value
 
-        const response = await fetch('http://localhost:3001/editsobre/' + 1, {
+        const response = await fetch('https://back-og3s.onrender.com/editsobre/' + 1, {
             method: 'PUT',
             body: JSON.stringify({
                 comment: text
