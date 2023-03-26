@@ -15,11 +15,11 @@ function PostApi() {
   const [data, setData] = useState({
     nome: '',
     cpf: '',
-    endereco: '',
-    estado: '',
+/*     endereco: '',
+    estado: '', */
     telefone: '',
     email: '',
-    plano: ''
+/*     plano: '' */
   });
 
   const Alunos = (e) => {
@@ -54,16 +54,16 @@ function PostApi() {
           <FormInput type='text' onChange={handleChange} name='nome' />
           <FormLabel>CPF</FormLabel>
           <FormInput type='text' onChange={handleChange} name='cpf' />
-          <FormLabel>Endereço</FormLabel>
+{/*           <FormLabel>Endereço</FormLabel>
           <FormInput type='text' onChange={handleChange} name='endereco' />
           <FormLabel>Cidade</FormLabel>
-          <FormInput type='text' onChange={handleChange} name='estado' />
+          <FormInput type='text' onChange={handleChange} name='estado' /> */}
           <FormLabel>Telefone</FormLabel>
           <FormInput type='text' onChange={handleChange} name='telefone' />
           <FormLabel>Email</FormLabel>
           <FormInput type='email' onChange={handleChange} name='email' />
-          <FormLabel>Plano</FormLabel>
-          <FormInput type='text' onChange={handleChange} name='plano' />
+{/*           <FormLabel>Plano</FormLabel>
+          <FormInput type='text' onChange={handleChange} name='plano' /> */}
           <FormButtonSearch>Cadastrar</FormButtonSearch>
         </Form>
       </FormContent>

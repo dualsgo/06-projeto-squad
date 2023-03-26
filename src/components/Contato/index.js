@@ -13,10 +13,10 @@ import {
 
 const Contato = () => {
     const formInitialDetails = {
-        firstName: "",
-        lastName: "",
+        nome: "",
+        cpf: "",
         email: "",
-        number: "",
+        telefone: "",
     };
     const [formDetails, setFormDetails] = useState(formInitialDetails);
     const [buttonText, setButtonText] = useState("Enviar");
@@ -32,7 +32,7 @@ const Contato = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Enviado");
-        let response = await fetch("https://back-og3s.onrender.com/adduser", {
+        let response = await fetch("https://api-drfq.onrender.com/alunos", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
@@ -53,10 +53,10 @@ const Contato = () => {
                 message: "",
             });
             setFormDetails({
-                firstName: "",
-                lastName: "",
+                nome: "",
+                cpf: "",
                 email: "",
-                number: "",
+                telefone: "",
 
             });
 
@@ -72,19 +72,19 @@ const Contato = () => {
                         <FormLabel htmlFor='nome'>Nome</FormLabel>
                         <FormInput
                             type="text"
-                            value={formDetails.firstName}
-                            placeholder="Nome"
+                            value={formDetails.nome}
+                            placeholder="Nome e sobrenome"
                             onChange={(e) =>
-                                onFormUpdate("firstName", e.target.value)
+                                onFormUpdate("nome", e.target.value)
                             }
                         />
-                        <FormLabel htmlFor='sobrenome'>Sobrenome</FormLabel>
+                        <FormLabel htmlFor='CPF'>CPF</FormLabel>
                         <FormInput
                             type="text"
-                            value={formDetails.lastName}
-                            placeholder="Sobrenome"
+                            value={formDetails.cpf}
+                            placeholder="xxx.xxx.xxx-xx"
                             onChange={(e) =>
-                                onFormUpdate("lastName", e.target.value)
+                                onFormUpdate("cpf", e.target.value)
                             }
                         />
                     </div>
@@ -101,10 +101,10 @@ const Contato = () => {
                         <FormLabel htmlFor='mensagem'>Telefone</FormLabel>
                         <FormInput
                             type="tel"
-                            value={formDetails.number}
-                            placeholder="(DDD) 98765-4321"
+                            value={formDetails.telefone}
+                            placeholder="(21) 98765-4321"
                             onChange={(e) =>
-                                onFormUpdate("number", e.target.value)
+                                onFormUpdate("telefone", e.target.value)
                             }
                         />
                     </div>

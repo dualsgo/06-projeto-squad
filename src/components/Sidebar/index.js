@@ -15,7 +15,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to='contato' onClick={toggle}> Contato</SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to='/login'>Log In</SidebarRoute>
+                    <SidebarRoute to='/login'>Login</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

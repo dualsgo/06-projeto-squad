@@ -21,21 +21,21 @@ function ReqApi() {
   const [alunos, setAlunos] = useState([])
   const [disabledNome, setDisabledNome] = useState(true)
   const [disabledCPF, setDisabledCPF] = useState(true)
-  const [disabledEndereco, setDisabledEndereco] = useState(true)
-  const [disabledEstado, setDisabledEstado] = useState(true)
+/*   const [disabledEndereco, setDisabledEndereco] = useState(true)
+  const [disabledEstado, setDisabledEstado] = useState(true) */
   const [disabledTelefone, setDisabledTelefone] = useState(true)
   const [disabledEmail, setDisabledEmail] = useState(true)
-  const [disabledPlano, setDisabledPlano] = useState(true)
-
+/*   const [disabledPlano, setDisabledPlano] = useState(true)
+ */
   const [data, setData] = useState({
     nome: '',
     cpf: '',
-    endereco: '',
-    estado: '',
+/*     endereco: '',
+    estado: '', */
     telefone: '',
     email: '',
-    plano: ''
-  });
+/*     plano: ''
+ */  });
 
   const Alunos = () => {
     setIsLoading(false);
@@ -114,7 +114,7 @@ function ReqApi() {
                 </FormEditInput>
 
 
-                <FormLabel>Endereço: </FormLabel>
+{/*                 <FormLabel>Endereço: </FormLabel>
                 <FormEditInput>
                   <FormInput
                     type="text" name="endereco"
@@ -137,7 +137,7 @@ function ReqApi() {
                   />
                   <EditButton onClick={() => setDisabledEstado(!disabledEstado)}><BsPencilSquare /></EditButton>
                 </FormEditInput>
-
+ */}
 
                 <FormLabel>Telefone: </FormLabel>
                 <FormEditInput>
@@ -163,7 +163,7 @@ function ReqApi() {
                   <EditButton onClick={() => setDisabledEmail(!disabledEmail)}><BsPencilSquare /></EditButton>
                 </FormEditInput>
 
-
+{/* 
                 <FormLabel>Plano: </FormLabel>
                 <FormEditInput>
                   <FormInput
@@ -175,7 +175,7 @@ function ReqApi() {
                   />
                   <EditButton onClick={() => setDisabledPlano(!disabledPlano)}><BsPencilSquare /></EditButton>
                 </FormEditInput>
-
+ */}
 
                 <FormButton type='button' className='buttonCont' onClick={() => DelApi(aluno.id)}>Deletar registro</FormButton>
                 <FormButton type='submit'>Atualizar registro</FormButton>
