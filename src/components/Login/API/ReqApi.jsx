@@ -7,6 +7,7 @@ import {
   FormButton,
   FormContent,
   FormEditInput,
+  FormContenBtn,
   Form,
   FormInput,
   FormLabel,
@@ -75,12 +76,13 @@ function ReqApi() {
     <Container>
       <FormWrap>
         <FormContent>
+          <FormContenBtn>
           <Link to='/post'><FormButtonSearch>Cadastrar aluno</FormButtonSearch></Link>
           <FormButtonSearch onClick={Alunos}>Listagem de alunos</FormButtonSearch>
           <LinkEdit to='/'>Página inicial</LinkEdit>
           <LinkEdit to='/admin/sobre'>Sobre</LinkEdit>
           <LinkEdit to='/admin/funcionalidades'>Funcionalidades</LinkEdit>
-
+          </FormContenBtn>
           {isLoading ? alunos.map((aluno) => {
 
             return <>

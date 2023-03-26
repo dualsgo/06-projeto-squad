@@ -47,6 +47,17 @@ align-items: center;
     padding: 10px
 }
 `
+export const FormContenBtn = styled.div`
+display: flex;
+justify-content: space-around;
+align-items: center;
+background: #f44;
+margin-bottom: 20px;
+@media screen and (max-width: 480px){
+    padding: 10px
+}
+`
+
 
 export const Form = styled.form`
 background: #010101;
