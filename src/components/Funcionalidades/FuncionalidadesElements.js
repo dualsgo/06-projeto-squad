@@ -98,9 +98,8 @@ export const FuncionalidadesH2 = styled.h2`
 `;
 
 export const FuncionalidadesP = styled.p` 
-    font-size: 1rem;
+    font-size: 40px;
     text-align: center;
-    padding-top: 5px;
 `;
 
 export const CheckMark = styled(BsCheckLg)` 

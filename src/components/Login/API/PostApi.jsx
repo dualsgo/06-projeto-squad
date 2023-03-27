@@ -3,7 +3,7 @@ import {
   Container,
   FormWrap,
   FormContent,
-  FormContenBtn,
+  FormContentBtn,
   Form,
   FormInput,
   FormLabel,
@@ -45,12 +45,12 @@ function PostApi() {
 
 
       <FormContent>
-        <FormContenBtn>
+        <FormContentBtn>
           <LinkEdit to='/register' >Listagem de alunos </LinkEdit>
             <LinkEdit to='/'>Página inicial</LinkEdit>
             <LinkEdit to='/admin/sobre'>Sobre</LinkEdit>
             <LinkEdit to='/admin/funcionalidades'>Funcionalidades</LinkEdit>
-          </FormContenBtn>
+          </FormContentBtn>
 
         <Form onSubmit={Alunos}>
           <FormLabel>Nome</FormLabel>

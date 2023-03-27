@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Video from '../../videos/video.mp4';
 import {
     HomeContainer,
@@ -8,13 +8,29 @@ import {
     HomeH1
 
 } from './HomeElements';
+
+
 const HomeSection = () => {
     const [hover, setHover] = useState(false)
+    const mainSentenceRef = useRef(null);
+
+    useEffect(() => {
+        const typeWriter = (el) => {
+            const mainText = el.innerHTML.split("")
+            el.innerHTML = ''
+            mainText.forEach(function (letter, i) {
+                setTimeout(function () {
+                    el.innerHTML += letter
+                }, 60 * i)
+            })
+        }
+
+        typeWriter(mainSentenceRef.current);
+    }, []);
 
     const onHover = () => {
         setHover(!hover)
     }
-
 
     return (
         <HomeContainer id='home'>
@@ -22,7 +38,7 @@ const HomeSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HomeBg>
             <HomeContent>
-                <HomeH1>Uma nova arte de fitness em sua cidade</HomeH1>
+                <HomeH1 ref={mainSentenceRef} className='mainSentence'>Uma nova arte de fitness em sua cidade</HomeH1>
             </HomeContent>
         </HomeContainer>
     )

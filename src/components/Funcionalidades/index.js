@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon1 from '../../images/icon-1.svg';
-
+import '../../App.css'
 import { useEffect, useState } from 'react';
 
 import {
@@ -34,7 +34,7 @@ const Funcionalidades = () => {
                 <FuncionalidadesIcon src={Icon1} />
                 <FuncionalidadesChecks style={{ listStyle: 'none' }}>
                     {funcionalidadeItems.map((funcionalidades, index) => (
-                        <FuncionalidadesP className='fs-1' index={index}> <CheckMark />{funcionalidades.name}<p>{funcionalidades.comment}</p></FuncionalidadesP>
+                        <FuncionalidadesP className='fs-1' index={index}> <CheckMark />{funcionalidades.name}<p className='descricao'>{funcionalidades.comment}</p></FuncionalidadesP>
                     ))}</FuncionalidadesChecks>
             </FuncionalidadesCard>
         </FuncionalidadesContainer>

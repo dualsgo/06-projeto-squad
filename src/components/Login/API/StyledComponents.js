@@ -47,7 +47,7 @@ align-items: center;
     padding: 10px
 }
 `
-export const FormContenBtn = styled.div`
+export const FormContentBtn = styled.div`
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -160,4 +160,3 @@ export const FormEditInput = styled.div`
     display:flex;
     width: 100%;
 `
-/* att */
