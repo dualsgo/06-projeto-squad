@@ -40,6 +40,10 @@ export const NavLogo = styled(LinkR)`
     font-weight: bold;
     text-decoration: none;
     margin-top: 0;
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        color: #f44;
+    
     `;
 
 export const MobileIcon = styled.div`
@@ -81,6 +85,9 @@ export const NavLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        color: #f44;
 
 `
 export const NavBtn = styled.nav`
