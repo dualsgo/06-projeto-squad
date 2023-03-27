@@ -7,7 +7,7 @@ export const homeObjOne = {
     headline: 'Saiba um pouco mais sobre a nossa empresa',
     description: ``,
     imgStart: false,
-    img: require('../../images/fitness_5.png'),
+    img: require('../../images/fitness_5.jpg'),
     primary: true,
     darkText: false,
 }

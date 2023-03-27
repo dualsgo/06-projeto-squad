@@ -1,22 +1,22 @@
-import {Container, Form, Button} from 'react-bootstrap'
-import {useEffect, useState} from 'react'
+import { Container, Form, Button } from 'react-bootstrap'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-function AdminSobre() {
-    const [sobre, setSobre] = useState([])
 
-    useEffect (() => {
+function AdminSobre() {
+    const [sobre, setSobre] = useState({ text: '' });
+
+    useEffect(() => {
         async function getSobre() {
             const response = await fetch('https://back-og3s.onrender.com/sobre')
-            const sobre = await response.json()
-            setSobre(sobre.sobreData)
+            const sobreData = await response.json()
+            setSobre(sobreData)
         }
         getSobre()
     }, []);
 
     function handleTextChange(event) {
         const text = event.target.value
-        setSobre({...sobre, text})
-        console.log(sobre);
+        setSobre({ ...sobre, text })
     }
 
     async function handleSubmit(event) {
@@ -37,7 +37,7 @@ function AdminSobre() {
             .then(data => console.log(data))
             .catch(error => console.error(error))
 
-        if(!response.ok) {
+        if (!response.ok) {
             return alert('Erro ao atualizar o conteúdo da página Sobre')
         }
         alert('Conteúdo da página Sobre atualizado com sucesso!')
@@ -45,9 +45,9 @@ function AdminSobre() {
 
     return (
         <Container className="conteudo-margin">
-                    <Link to="/"><Button variant="secondary">Home</Button></Link>
+            <Link to="/"><Button variant="secondary">Home</Button></Link>
             <Link to="/Register"><Button variant="secondary">Administrativo</Button></Link>
-            <hr/>
+            <hr />
             <h1>Admin - Sobre</h1>
             <hr />
             <Form onSubmit={handleSubmit}>
@@ -58,7 +58,7 @@ function AdminSobre() {
                 <Button variant="primary" type="submit">
                     Atualizar o texto
                 </Button>
-            </Form>            
+            </Form>
         </Container>
     )
 }

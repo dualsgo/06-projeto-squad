@@ -38,7 +38,7 @@ const HomeSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HomeBg>
             <HomeContent>
-                <HomeH1 ref={mainSentenceRef} className='mainSentence'>Uma nova arte de fitness em sua cidade</HomeH1>
+                <HomeH1 ref={mainSentenceRef} className='mainSentence'>Transforme seu corpo e sua vida, em qualquer lugar e a qualquer hora, com a nossa academia online de excelência!</HomeH1>
             </HomeContent>
         </HomeContainer>
     )

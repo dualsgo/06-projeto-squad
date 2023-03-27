@@ -5,7 +5,8 @@ import styled from "styled-components";
 export const InfoContainer = styled.div`
 color: #fff;
 background: ${({ lightBg }) => (lightBg ? '#000' : '#fff')};
-
+height: auto;
+margin: 15px 0 15px 0
 
 @media screen and (max-width: 768px) {  
     padding: 150px 0;
@@ -15,11 +16,12 @@ background: ${({ lightBg }) => (lightBg ? '#000' : '#fff')};
 export const InfoWrapper = styled.div`
 display: grid;
 z-index: 1;
-height: 860px;
+height: auto;
 width: 100%;
 max-width: 1100px;
 margin-right: auto;
 margin-left: auto;
+margin-top: 20px;
 padding: 0 24px;
 justify-content: center;
 `;

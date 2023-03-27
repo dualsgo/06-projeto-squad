@@ -28,7 +28,7 @@ const Funcionalidades = () => {
 
     return (
         <FuncionalidadesContainer id='funcionalidades'>
-            <FuncionalidadesH1>Veja os benefícios que você irá adquirir fazendo parde do nosso programa.</FuncionalidadesH1>
+            <FuncionalidadesH1>Veja os benefícios que você irá adquirir fazendo parte do nosso programa.</FuncionalidadesH1>
 
             <FuncionalidadesCard>
                 <FuncionalidadesIcon src={Icon1} />
