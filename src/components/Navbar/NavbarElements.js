@@ -39,6 +39,7 @@ export const NavLogo = styled(LinkR)`
     margin-left: 24px;
     font-weight: bold;
     text-decoration: none;
+    margin-top: 0;
     `;
 
 export const MobileIcon = styled.div`
@@ -62,6 +63,8 @@ export const NavMenu = styled.ul`
     list-style: none;
     text-align: center;
     margin-right: -22px;
+    margin-left: -250px;
+    margin-top: 18px;
 
     @media screen and (max-width: 768px) {
         display: none;
@@ -103,7 +106,8 @@ export const NavLinksContact = styled(LinkR)`
 `
 
 export const NavBtnLink = styled(LinkR)`
-    border-radius: 50px;
+    margin-left: -150px;
+    border-radius: 10px;
     background: #f44;
     white-space: nowrap;
     padding: 10px 22px;

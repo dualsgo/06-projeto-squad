@@ -32,7 +32,7 @@ const Footer = () => {
                         <SocialLogo to='/' onClick={toggleHome}>
                             Body Move Center
                         </SocialLogo>
-                        <WebsiteRights>{new Date().getFullYear()}</WebsiteRights>
+                        <WebsiteRights>Todos os direitos reservados - © {new Date().getFullYear()} Copyright</WebsiteRights>
 
                         <SocialIcons>
                             <SocialIconLink href="#/" target="_blank"
