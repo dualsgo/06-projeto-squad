@@ -5,7 +5,7 @@ export const homeObjOne = {
     lightTextDesc: true,
     topLine: 'Quem somos?',
     headline: 'Saiba um pouco mais sobre a nossa empresa',
-    description: ``,
+    description: "",
     imgStart: false,
     img: require('../../images/fitness_5.jpg'),
     primary: true,
