@@ -43,7 +43,7 @@ const Contato = () => {
 
         setButtonText("Enviar");
         let result = await response.json();
-        console.log(result);
+        
 
         if (result.code === 200) {
             setStatus({ success: true, message: "Mensagem de Sucesso" });

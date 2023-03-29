@@ -10,7 +10,7 @@ function AdminFuncionalidades() {
             const response = await fetch('https://back-og3s.onrender.com/funcionalidades');
             var body = await response.json();
             setFuncionalidades(body.funcionalidadeData);
-            console.log(body);
+            
         }
         fetchItems();
     }, []);
@@ -32,7 +32,7 @@ function AdminFuncionalidades() {
             }
         })
             .then(response => response.json())
-            .then(data => console.log(data))
+            .then(data => {})
             .catch(error => console.error(error))
 
         if (!response.ok) {
@@ -43,12 +43,12 @@ function AdminFuncionalidades() {
         alert('Funcionalidade cadastrada com sucesso')
         setFuncionalidades([...funcionalidades, funcionalidade.data])
         form.reset()
-        console.log(funcionalidades);
+        
     }
 
 
     async function excluirFuncionalidade(id) {
-        console.log(id)
+        
 
         fetch('https://back-og3s.onrender.com/deletefuncionalidades/' + id, {
             method: 'DELETE',
@@ -60,7 +60,7 @@ function AdminFuncionalidades() {
             }
         })
             .then(response => response.json())
-            .then(data => console.log(data))
+            .then(data => {})
             .catch(error => console.error(error))
 
         alert('Funcionalidade excluída com sucesso')
@@ -75,9 +75,9 @@ function AdminFuncionalidades() {
         botao.onclick = (event) => { salvarEdicao(event.target, id) }
 
         const linha = botao.parentNode.parentNode
-        console.log(linha)
+        
         const colunaTitulo = linha.children[1]
-        console.log(colunaTitulo)
+        
 
         const inputTitulo = document.createElement('input')
         inputTitulo.type = 'text'
@@ -91,7 +91,7 @@ function AdminFuncionalidades() {
         inputDescricao.value = colunaDescricao.innerText
         colunaDescricao.innerText = ''
         colunaDescricao.appendChild(inputDescricao)
-        console.log(botao.parentNode.parentNode.children[1].children[0].value)
+        
     }
 
     async function salvarEdicao(botao, id) {
@@ -113,9 +113,9 @@ function AdminFuncionalidades() {
             }
         })
             .then(response => response.json())
-            .then(data => console.log(data))
+            .then(data => {})
             .catch(error => console.error(error))
-        console.log(id)
+        
 
         colunaTitulo.innerText = inputTitulo.value
         colunaDescricao.innerText = inputDescricao.value

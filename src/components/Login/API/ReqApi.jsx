@@ -70,7 +70,7 @@ function ReqApi() {
     });
   }
 
-  console.log(alunos)
+  
   return (
 
     <Container>

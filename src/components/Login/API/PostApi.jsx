@@ -29,7 +29,7 @@ function PostApi() {
       method: 'POST',
       body: JSON.stringify(data),
       headers: { 'Content-Type': 'application/json' }
-    }).then(x => x.json()).then(res => console.log(res))
+    }).then(x => x.json()).then(res => {})
   }
 
   const handleChange = ({ target: { value, name } }) => {

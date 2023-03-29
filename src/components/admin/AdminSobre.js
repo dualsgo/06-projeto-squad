@@ -34,7 +34,7 @@ function AdminSobre() {
             }
         })
             .then(response => response.json())
-            .then(data => console.log(data))
+            .then(data => {})
             .catch(error => console.error(error))
 
         if (!response.ok) {
