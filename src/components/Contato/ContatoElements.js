@@ -36,14 +36,14 @@ export const FormLabel = styled.label`
 `
 
 export const FormInput = styled.input`
-padding: 16px 16px;
-margin: 0 15px 32px 0;
+padding: 16px 16px 16px 16px;
+margin: 32px 15px 32px 15px;
 border: none;
 border-radius: 4px;
 `
 
 export const FormButton = styled.button`
-    border-radius: 50px;
+    border-radius: 10px;
     background: #f44;
     white-space: nowrap;
     padding: 10px 22px;

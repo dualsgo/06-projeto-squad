@@ -31,6 +31,9 @@ text-decoration: none;
 color:#fff;
 font-weight: 700;
 font-size: 32px;
+&:hover {
+    transition: all 0.2s ease-in-out;
+    color: #f44;
 
 @media screen and (max-width: 480px){
     margin-left: 16px;

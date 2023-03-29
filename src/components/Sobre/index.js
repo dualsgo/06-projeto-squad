@@ -22,7 +22,6 @@ const Sobre = ({ lightBg,
     lightText,
     headline,
     darkText,
-    description,
     img }) => {
 
     const [sobre, setSobre] = useState('');

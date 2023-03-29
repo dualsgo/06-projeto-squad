@@ -5,7 +5,7 @@ export const FuncionalidadesContainer = styled.div`
     height: 800px;
     display: flex;
     margin: auto;
-    padding: 100px auto 100px auto;
+    padding: 35px auto 35px auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
