@@ -14,13 +14,13 @@ export const FuncionalidadesContainer = styled.div`
     @media screen and (max-width: 1000px) {
         height: 1000px;
         margin: 20px;
-        padding: 150px;
+        padding-top: 150px;
     }
 
     @media screen and (max-width: 480px) {
         height: 1000px;
         margin: 20px;
-        padding: 150px;
+        padding-top: 150px;
     }
 `;
 
