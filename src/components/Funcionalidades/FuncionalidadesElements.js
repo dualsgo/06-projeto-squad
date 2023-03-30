@@ -75,14 +75,14 @@ export const FuncionalidadesChecks = styled.div`
 export const FuncionalidadesIcon = styled.img` 
     height: 160px;
     width: 160px;
-    margin-bottom: 10px;
-    margin-top: 30px
+    margin: 20px 0 20px 0;
 `;
 
 export const FuncionalidadesH1 = styled.h1` 
     font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 64px;
+    margin: 30px 200px 30px 200px;
+    text-align: center;
 
     @media screen and (max-width: 768px) {
 margin: 20px;

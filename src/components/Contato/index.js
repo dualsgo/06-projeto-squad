@@ -65,7 +65,7 @@ const Contato = () => {
 
     return (
         <ContatoContainer id='contato'>
-            <ContatoH1>Faça a sua inscrição no programa aqui!</ContatoH1>
+            <ContatoH1>Ficou interessado? Cadastre-se na lista de espera e receba mais informações antes da inauguração!</ContatoH1>
             <Form onSubmit={handleSubmit}>
                 <div style={{ display: "flex", flexDirection: "column" }}>
                     <div>
@@ -73,7 +73,7 @@ const Contato = () => {
                         <FormInput
                             type="text"
                             value={formDetails.nome}
-                            placeholder="Nome e sobrenome"
+                            placeholder="Digite nome e sobrenome"
                             onChange={(e) =>
                                 onFormUpdate("nome", e.target.value)
                             }
