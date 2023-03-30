@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { BsCheckLg } from 'react-icons/bs';
 
 export const FuncionalidadesContainer = styled.div`  
-    height: 800px;
+    height: auto;
     display: flex;
     margin: auto;
     padding: 100px auto 100px auto;
@@ -11,16 +11,22 @@ export const FuncionalidadesContainer = styled.div`
     align-items: center;
     background: #000;
 
-    @media screen and (max-width: 1000px) {
-        height: 1000px;
-        margin: 20px;
-        padding-top: 150px;
+    @media screen and (max-width: 1500px) {
+        height: auto;
+        margin: 0;
+        padding: 150px 0 150px 0;
+    }
+
+        @media screen and (max-width: 640px) {
+        height: auto;
+        margin: 0;
+        padding: 150px 0 150px 0;
     }
 
     @media screen and (max-width: 480px) {
-        height: 1000px;
-        margin: 20px;
-        padding-top: 150px;
+        height: auto;
+        margin: 0;
+        padding: 150px 0 150px 0;
     }
 `;
 
@@ -54,7 +60,7 @@ export const FuncionalidadesCard = styled.div`
     padding: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
-
+    margin: 20px;
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;

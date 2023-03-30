@@ -12,8 +12,9 @@ export const ContatoContainer = styled.div`
 
 export const ContatoH1 = styled.h1`
   font-size: 2.5rem;
+  text-align: center;
   color: #000;
-  margin-bottom: 64px;
+  margin: 30px;
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
@@ -26,12 +27,18 @@ export const Form = styled.form`
   align-items: center;
   background: #000 ;
   padding: 50px
+  }
 `
 
 export const FormLabel = styled.label`
   font-size: 1.5rem;
   color: #fff;
   margin: 0 15px 32px 0;
+    @media screen and (max-width: 875px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 `
 
@@ -40,6 +47,12 @@ padding: 16px 16px;
 margin: 0 15px 32px 0;
 border: none;
 border-radius: 4px;
+  @media screen and (max-width: 875px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 `
 
 export const FormButton = styled.button`

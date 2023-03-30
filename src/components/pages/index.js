@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import HomeSection from '../HomeSection';
 import Sobre from '../Sobre';
-import { homeObjOne, homeObjTwo} from '../Sobre/Data';
+import { homeObjOne} from '../Sobre/Data';
 import Navbar from '../Navbar'; 
 import Funcionalidades from '../Funcionalidades';
 import Sidebar from '../Sidebar';

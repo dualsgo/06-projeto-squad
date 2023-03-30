@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon1 from '../../images/icon-1.svg';
+import Icon1 from '../../images/logo.gif';
 import '../../App.css'
 import { useEffect, useState } from 'react';
 
