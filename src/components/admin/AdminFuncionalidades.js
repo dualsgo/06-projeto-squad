@@ -1,12 +1,13 @@
 import { Container, Table, Form, Button } from 'react-bootstrap'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function AdminFuncionalidades() {
     const [funcionalidades, setFuncionalidades] = useState([])
 
     useEffect(() => {
         async function fetchItems() {
-            const response = await fetch('https://squad-back.onrender.com/funcionalidades');
+            const response = await fetch('https://back-og3s.onrender.com/funcionalidades');
             var body = await response.json();
             setFuncionalidades(body.funcionalidadeData);
             console.log(body);
@@ -20,7 +21,7 @@ function AdminFuncionalidades() {
         const title = form.title.value
         const description = form.description.value
 
-        const response = await fetch('https://squad-back.onrender.com/addfuncionalidades', {
+        const response = await fetch('https://back-og3s.onrender.com/addfuncionalidades', {
             method: 'POST',
             body: JSON.stringify({
                 name: title,
@@ -49,7 +50,7 @@ function AdminFuncionalidades() {
     async function excluirFuncionalidade(id) {
         console.log(id)
 
-        fetch('https://squad-back.onrender.com/deletefuncionalidades/' + id, {
+        fetch('https://back-og3s.onrender.com/deletefuncionalidades/' + id, {
             method: 'DELETE',
             body: JSON.stringify({
                 funcionalidadeId: id,
@@ -100,7 +101,7 @@ function AdminFuncionalidades() {
         const colunaDescricao = linha.children[2]
         const inputDescricao = colunaDescricao.children[0]
 
-        const response = await fetch('https://squad-back.onrender.com/editfuncionalidades/' + id, {
+        const response = await fetch('https://back-og3s.onrender.com/editfuncionalidades/' + id, {
             method: 'PUT',
             body: JSON.stringify({
                 funcionalidadeId: id,
@@ -127,25 +128,10 @@ function AdminFuncionalidades() {
 
     return (
         <Container className="conteudo-margin">
+            <Link to="/"><Button variant="secondary">Home</Button></Link>
+            <Link to="/Register"><Button variant="secondary">Administrativo</Button></Link>
             <hr />
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/">Body Move Center</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Register">Administrativo</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <h1>Admin Funcionalidades</h1>
             <hr />
             <h2>Adicionar Funcionalidade</h2>
             <Form onSubmit={handleSubmit}>

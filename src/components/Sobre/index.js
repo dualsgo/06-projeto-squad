@@ -22,13 +22,14 @@ const Sobre = ({ lightBg,
     lightText,
     headline,
     darkText,
+    description,
     img }) => {
 
     const [sobre, setSobre] = useState('');
 
     useEffect(() => {
         async function fetchItems() {
-            const response = await fetch('https://squad-back.onrender.com/sobre');
+            const response = await fetch('https://back-og3s.onrender.com/sobre');
             const data = await response.json();
 
             if (data.sobreData[0] === undefined) {

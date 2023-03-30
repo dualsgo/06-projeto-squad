@@ -1,12 +1,13 @@
 import { Container, Form, Button } from 'react-bootstrap'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function AdminSobre() {
     const [sobre, setSobre] = useState({ text: '' });
 
     useEffect(() => {
         async function getSobre() {
-            const response = await fetch('https://squad-back.onrender.com/sobre')
+            const response = await fetch('https://back-og3s.onrender.com/sobre')
             const sobreData = await response.json()
             setSobre(sobreData)
         }
@@ -23,7 +24,7 @@ function AdminSobre() {
         const form = event.currentTarget
         const text = form.text.value
 
-        const response = await fetch('https://squad-back.onrender.com/editsobre/' + 1, {
+        const response = await fetch('https://back-og3s.onrender.com/editsobre/' + 1, {
             method: 'PUT',
             body: JSON.stringify({
                 comment: text
@@ -44,27 +45,11 @@ function AdminSobre() {
 
     return (
         <Container className="conteudo-margin">
+            <Link to="/"><Button variant="secondary">Home</Button></Link>
+            <Link to="/Register"><Button variant="secondary">Administrativo</Button></Link>
             <hr />
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/">Body Move Center</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Register">Administrativo</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <h1>Admin - Sobre</h1>
             <hr />
-            <h2>Adicionar Sobre</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="text">
                     <Form.Label>Conteúdo da página Sobre</Form.Label>

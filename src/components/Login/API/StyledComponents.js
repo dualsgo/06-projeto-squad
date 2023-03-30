@@ -28,7 +28,7 @@ export const Icon = styled.text`
 margin-left: 32px;
 margin-top: 32px;
 text-decoration: none;
-color:#f44;
+color:#fff;
 font-weight: 700;
 font-size: 32px;
 @media screen and (max-width: 480px){
@@ -53,7 +53,6 @@ justify-content: space-around;
 align-items: center;
 background: #f44;
 margin-bottom: 20px;
-
 @media screen and (max-width: 480px){
     padding: 10px
 }
@@ -78,7 +77,7 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
 export const FormH1 = styled.h1`
 margin-bottom: 40px;
-color: #f44;
+color: #fff;
 font-size: 20px;
 font-weight: 400;
 text-align: center;
@@ -87,7 +86,7 @@ text-align: center;
 export const FormLabel = styled.label`
 margin-bottom: 8px;
 font-size: 14px;
-color: #f44;
+color: #fff;
 `;
 
 export const FormInput = styled.input`
@@ -107,18 +106,12 @@ color: #fff;
 font-size: 20px;
 cursor: pointer;
 margin-bottom: 10px;
-&:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #000;
-
-}
 `;
 
 export const Text = styled.span`
 text-align: center;
 margin-top: 24px;
-color: #f44;
+color: #fff;
 font-size: 14px;
 cursor: pointer;
 `;
@@ -128,12 +121,12 @@ display: flex;
 font-size: 42px;
 width: 30px;
 height: auto;
-color: #fff;
+color: #f44;
 cursor: pointer;
 margin-left: 2px;
 
 &:hover{
-    color: #f44;
+    color: #fff;
 }
 `
 export const FormButtonSearch = styled.button`
@@ -147,12 +140,6 @@ font-size: 1.5rem;
 cursor: pointer;
 margin-bottom: 10px;
 margin-top: 20px;
-&:hover {
-    transition: all 0.2s ease-in-out;
-    background: #f44;
-    color: #000;
-
-}
 `
 
 export const LinkEdit = styled(Link)`
@@ -167,13 +154,7 @@ color: #fff;
 font-size: 1.5rem;
 cursor: pointer;
 margin-bottom: 10px;
-margin-top: 20px;
-&:hover {
-    transition: all 0.2s ease-in-out;
-    background: #f44;
-    color: #000;
-}
-`
+margin-top: 20px;`
 
 export const FormEditInput = styled.div`  
     display:flex;

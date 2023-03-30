@@ -11,7 +11,8 @@ import {
     NavItem,
     NavLinks,
     NavBtn,
-    NavBtnLink
+    NavBtnLink,
+    NavLinksContact
 } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
