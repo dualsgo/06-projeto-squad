@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Video from '../../videos/video.mp4';
+import Video from '../../videos/video2.mp4';
 import {
     HomeContainer,
     HomeBg,
