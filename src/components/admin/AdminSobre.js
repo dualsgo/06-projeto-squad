@@ -1,6 +1,5 @@
 import { Container, Form, Button } from 'react-bootstrap'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
 
 function AdminSobre() {
     const [sobre, setSobre] = useState({ text: '' });
@@ -45,11 +44,27 @@ function AdminSobre() {
 
     return (
         <Container className="conteudo-margin">
-            <Link to="/"><Button variant="secondary">Home</Button></Link>
-            <Link to="/Register"><Button variant="secondary">Administrativo</Button></Link>
             <hr />
-            <h1>Admin - Sobre</h1>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/">Body Move Center</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Register">Administrativo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
             <hr />
+            <h2>Adicionar Sobre</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="text">
                     <Form.Label>Conteúdo da página Sobre</Form.Label>
