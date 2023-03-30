@@ -28,7 +28,7 @@ const Sobre = ({ lightBg,
 
     useEffect(() => {
         async function fetchItems() {
-            const response = await fetch('https://backend-mjdc.onrender.com/sobre');
+            const response = await fetch('https://squad-back.onrender.com/sobre');
             const data = await response.json();
 
             if (data.sobreData[0] === undefined) {

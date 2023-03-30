@@ -19,7 +19,9 @@ const Funcionalidades = () => {
     const [funcionalidadeItems, setFuncionalidadesItems] = useState([]);
     useEffect(() => {
         async function fetchItems() {
-            const response = await fetch('https://backend-mjdc.onrender.com/funcionalidades');
+            const response = await fetch('https://squad-back.onrender.com/funcionalidades', {
+                mode: 'no-cors'
+            })
             const data = await response.json();
             setFuncionalidadesItems(data.funcionalidadeData);
         }

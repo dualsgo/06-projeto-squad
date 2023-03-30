@@ -6,7 +6,7 @@ function AdminFuncionalidades() {
 
     useEffect(() => {
         async function fetchItems() {
-            const response = await fetch('https://backend-mjdc.onrender.com/funcionalidades');
+            const response = await fetch('https://squad-back.onrender.com/funcionalidades');
             var body = await response.json();
             setFuncionalidades(body.funcionalidadeData);
             console.log(body);
@@ -20,7 +20,7 @@ function AdminFuncionalidades() {
         const title = form.title.value
         const description = form.description.value
 
-        const response = await fetch('https://backend-mjdc.onrender.com/addfuncionalidades', {
+        const response = await fetch('https://squad-back.onrender.com/addfuncionalidades', {
             method: 'POST',
             body: JSON.stringify({
                 name: title,
@@ -49,7 +49,7 @@ function AdminFuncionalidades() {
     async function excluirFuncionalidade(id) {
         console.log(id)
 
-        fetch('https://backend-mjdc.onrender.com/deletefuncionalidades/' + id, {
+        fetch('https://squad-back.onrender.com/deletefuncionalidades/' + id, {
             method: 'DELETE',
             body: JSON.stringify({
                 funcionalidadeId: id,
@@ -100,7 +100,7 @@ function AdminFuncionalidades() {
         const colunaDescricao = linha.children[2]
         const inputDescricao = colunaDescricao.children[0]
 
-        const response = await fetch('https://backend-mjdc.onrender.com/editfuncionalidades/' + id, {
+        const response = await fetch('https://squad-back.onrender.com/editfuncionalidades/' + id, {
             method: 'PUT',
             body: JSON.stringify({
                 funcionalidadeId: id,
