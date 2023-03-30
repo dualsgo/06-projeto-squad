@@ -29,7 +29,7 @@ const Sobre = ({ lightBg,
 
     useEffect(() => {
         async function fetchItems() {
-            const response = await fetch('https://back-og3s.onrender.com/sobre');
+            const response = await fetch('https://back-ywhm.onrender.com/sobre');
             const data = await response.json();
 
             if (data.sobreData[0] === undefined) {
