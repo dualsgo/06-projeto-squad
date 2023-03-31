@@ -1,12 +1,9 @@
-# Projeto Resília - Frontenders
+# Projeto Resília - Projeto Módulo 6 (FINAL)
 
-O projeto é a conclusão de aprendizados do módulo II da RESÍLIA EDUCAÇÃO. Nele, fomos orientados a estar desenvolvendo um site completo de cursos onde o usuário percorre por várias páginas. No projeto, utilizamos validação de E-MAIL, CPF E CEP(utilizando a api dos correios).
-Além do usuário ter a possibilidade de entrar em contato por meio de formulário. Criamos alguns efeitos em Javascript para dar dinamismo na página.
-Foi o primeiro projeto que desenvolvemos totalmente responsivo.
+
 
 ## 🚀 Finalidade
 
-Frontenders é uma plataforma de mentoria/suporte para desenvolvedores nas mais diversas tecnologias usadas por desenvolvedores Front-End de aplicações Web/Mobile.
 
 
 ## 📋 Tecnologias utilizadas
