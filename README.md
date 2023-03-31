@@ -1,9 +1,8 @@
 # Projeto Resília - Projeto Módulo 6 (FINAL)
 
-
-
 ## 🚀 Finalidade
 
+Precisamos montar um MVP para a empresa testar o seu novo app. Para isso construímos um app (front e back-end) que vai implementar as funcionalidades básicas do CRUD.
 
 
 ## 📋 Tecnologias utilizadas
