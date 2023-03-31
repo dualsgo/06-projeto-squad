@@ -7,7 +7,7 @@ Precisamos montar um MVP para a empresa testar o seu novo app. Para isso constru
 
 ## 📋 Tecnologias utilizadas
 
-🛠️No projeto, utilizamos HTML5 de forma semântica, o CSS3 e o Javascript.
+🛠️No projeto, utilizamos HTML5 de forma semântica, CSS3, Javascript, React e Bootstrap.
 <div style="display: inline_block"><br>
 <img align="center" alt="Will-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
 <img align="center" alt="Will-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
